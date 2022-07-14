@@ -1,6 +1,7 @@
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
+    width: 100vw;
 }
 
 .header ,.footer {
@@ -9,9 +10,8 @@ body {
     color: #e5e7eb;
     font-size: 18px;
     justify-content: space-between;
-    padding: 16px;
+    padding: 36px 96px;
     margin: 0;
-    border: red solid;
 }
 
 ul {
@@ -36,7 +36,7 @@ a {
     display: flex;
     flex: 1;
     background-color: #1f2937;
-    padding: 48px;
+    padding: 96px;
     gap: 100px;
 }
 
@@ -53,7 +53,8 @@ p {
 
 img {
     max-width: 100%;
-    height: auto;
+    max-height: auto;
+    min-width: 0;
 }
 
 .button {
@@ -68,22 +69,85 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 24px;
-    gap: 24px
+    padding: 36px 96px;
+    gap: 24px;
 }
 
 .container {
     display: flex;
+    max-width: 100%;
     flex: 1;
-    justify-content: space-between;
     gap: 50px;
     padding: 48px;
-    border: solid red;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .ph-image {
-    width: 100px;
-    height: 100px;
-    border: solid #3882f6;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #3882f6;
+    border-radius: 25px;
+    
+}
+
+.card {
+    justify-content: center;
+    width: 146px;
+}
+
+.info-text {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1f2937
+}
+
+.grey {
+    background-color: #e5e7eb;
+    padding: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: italic;
+    margin-right: 32px; 
+}
+
+.person {
+    align-self: flex-end;
+    font-weight: 900;
+    font-size: 24px;
+    margin-right: 32px; 
+}
+
+.call {
+    background-color: #3882f6;
+    padding: 48px;
+    margin: 72px;
+    border-radius: 25px;
+    display: flex;
+    color: #f9faf8;
+    gap: 48px;
+    font-weight: 700;
+}
+
+.white-border {
+    border: 2px solid #f9faf8;;
+}
+
+.subtext {
+    font-weight: 400;
+}
+
+.footer {
+    justify-content: center;
+    font-size: 14px;
+    padding: 24px;
     
 }
